@@ -7,7 +7,6 @@ seaborn
 joblib
 streamlit_lottie
 streamlit_option_menu
-json
 tkinter
 matplotlib.pyplot
 ipywidgets
