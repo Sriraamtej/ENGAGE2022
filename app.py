@@ -181,7 +181,7 @@ def predict_note_authentication(ARAI_Certified_Mileage_input,Displacement_input,
     return prediction
 
 def load_lottieurl(url:str):
-    r=request.get(url)
+    r = request.get(url)
     if r.status_code!=200:
         return None
     return r.json()
