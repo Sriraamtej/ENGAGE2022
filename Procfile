@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run C:\Users\srira\OneDrive\Desktop\ENGAGE\Cars_DataAnalysis.py
