@@ -7,5 +7,4 @@ seaborn
 joblib
 streamlit_lottie
 streamlit_option_menu
-matplotlib.pyplot
-sklearn.cluster
+
