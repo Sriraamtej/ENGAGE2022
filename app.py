@@ -174,7 +174,7 @@ def gridplot():
 
 
 
-decreg=load(r'C:\Users\srira\OneDrive\Desktop\ENGAGE\decreg.joblib')
+decreg=load('decreg.joblib')
 def predict_note_authentication(ARAI_Certified_Mileage_input,Displacement_input,Power_input,Torque_input,Fuel_Tank_Capacity_input,Height_input,Length_input,Width_input,Doors_input,Seating_Capacity_input,Wheelbase_input,Number_of_Airbags_input,Body_Type_Sedan_input,Fuel_Type_Diesel_input,Fuel_Type_Hybrid_input):
     prediction=decreg.predict([[ARAI_Certified_Mileage_input,Displacement_input,Power_input,Torque_input,Fuel_Tank_Capacity_input,Height_input,Length_input,Width_input,Doors_input,Seating_Capacity_input,Wheelbase_input,Number_of_Airbags_input,Body_Type_Sedan_input,Fuel_Type_Diesel_input,Fuel_Type_Hybrid_input]])
     print(prediction)
