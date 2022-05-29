@@ -180,18 +180,15 @@ def predict_note_authentication(ARAI_Certified_Mileage_input,Displacement_input,
     print(prediction)
     return prediction
 
-def load_lottieurl(url:str):
-    r = request.get(url)
-    if r.status_code!=200:
-        return None
-    return r.json()
-    
+def load_lottiefile(filepath:str):
+    with open(filepath,"r") as f:
+        return json.load(f)
 
-lottie_insert=load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_M9p23l.json")
-lottie_insert2=load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_wkaoqtgc.json")
-lottie_insert3=load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_swnrn2oy.json")
-lottie_insert4=load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_7tkgyywv.json")
-lottie_insert5=load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_um6xzlk1.json")
+lottie_insert=load_lottiefile("hello.json")
+lottie_insert2=load_lottiefile("car-in-movement.json")
+lottie_insert3=load_lottiefile("tourists-by-car.json")
+lottie_insert4=load_lottiefile("data-processing.json")
+lottie_insert5=load_lottiefile("loading car-types.json")
 
 
 
