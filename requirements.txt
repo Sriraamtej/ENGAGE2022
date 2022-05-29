@@ -4,3 +4,7 @@ pandas
 sklearn
 matplotlib
 seaborn
+joblib
+streamlit_lottie
+streamlit_option_menu
+json
